@@ -14,6 +14,7 @@
 		45B9D4FC22C0CD21007CC18F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B9D4FA22C0CD21007CC18F /* LaunchScreen.storyboard */; };
 		45B9D50722C0CD22007CC18F /* BazelBuildTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B9D50622C0CD22007CC18F /* BazelBuildTests.swift */; };
 		45B9D51222C0CD22007CC18F /* BazelBuildUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B9D51122C0CD22007CC18F /* BazelBuildUITests.swift */; };
+		465E8A20903C194000572FDB /* Pods_BazelBuild.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4A8EE38C13ADE3A18734F4 /* Pods_BazelBuild.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30C7CFAEC3349A53F68BE844 /* Pods-BazelBuild.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BazelBuild.debug.xcconfig"; path = "Target Support Files/Pods-BazelBuild/Pods-BazelBuild.debug.xcconfig"; sourceTree = "<group>"; };
 		45B9D4EE22C0CD20007CC18F /* BazelBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BazelBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B9D4F122C0CD20007CC18F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45B9D4F322C0CD20007CC18F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		45B9D50D22C0CD22007CC18F /* BazelBuildUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BazelBuildUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B9D51122C0CD22007CC18F /* BazelBuildUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BazelBuildUITests.swift; sourceTree = "<group>"; };
 		45B9D51322C0CD22007CC18F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C4A8EE38C13ADE3A18734F4 /* Pods_BazelBuild.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BazelBuild.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C487028F0FC9706B55D2A46C /* Pods-BazelBuild.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BazelBuild.release.xcconfig"; path = "Target Support Files/Pods-BazelBuild/Pods-BazelBuild.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				465E8A20903C194000572FDB /* Pods_BazelBuild.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		387212CD0C1888A410639D92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C4A8EE38C13ADE3A18734F4 /* Pods_BazelBuild.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		45B9D4E522C0CD20007CC18F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				45B9D50522C0CD22007CC18F /* BazelBuildTests */,
 				45B9D51022C0CD22007CC18F /* BazelBuildUITests */,
 				45B9D4EF22C0CD20007CC18F /* Products */,
+				A4B35FAEEC95548E0892FA79 /* Pods */,
+				387212CD0C1888A410639D92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,16 @@
 			path = BazelBuildUITests;
 			sourceTree = "<group>";
 		};
+		A4B35FAEEC95548E0892FA79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30C7CFAEC3349A53F68BE844 /* Pods-BazelBuild.debug.xcconfig */,
+				C487028F0FC9706B55D2A46C /* Pods-BazelBuild.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45B9D51622C0CD22007CC18F /* Build configuration list for PBXNativeTarget "BazelBuild" */;
 			buildPhases = (
+				46E8E2C106AAD5EB24EB0531 /* [CP] Check Pods Manifest.lock */,
 				45B9D4EA22C0CD20007CC18F /* Sources */,
 				45B9D4EB22C0CD20007CC18F /* Frameworks */,
 				45B9D4EC22C0CD20007CC18F /* Resources */,
+				59FB975541C3014545389B03 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46E8E2C106AAD5EB24EB0531 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BazelBuild-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59FB975541C3014545389B03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BazelBuild/Pods-BazelBuild-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BazelBuild/Pods-BazelBuild-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BazelBuild/Pods-BazelBuild-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		45B9D4EA22C0CD20007CC18F /* Sources */ = {
@@ -430,6 +499,7 @@
 		};
 		45B9D51722C0CD22007CC18F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30C7CFAEC3349A53F68BE844 /* Pods-BazelBuild.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +518,7 @@
 		};
 		45B9D51822C0CD22007CC18F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C487028F0FC9706B55D2A46C /* Pods-BazelBuild.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

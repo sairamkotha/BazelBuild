@@ -1,0 +1,2 @@
+${PODS_ROOT}/Target Support Files/Pods-BazelBuild/Pods-BazelBuild-frameworks.sh
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
